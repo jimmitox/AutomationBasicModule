@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="64" total="72" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-03T13:51:10 CST" name="Login Suite" finished-at="2020-07-03T13:54:08 CST" duration-ms="178068">
+    <groups>
+      <group name="sucessTest">
+        <method signature="loginTest.allow_user_to_register(pojo.registerData)[pri:0, instance:loginTest@7e11ab3d]" name="allow_user_to_register" class="loginTest"/>
+      </group> <!-- sucessTest -->
+      <group name="successTest">
+        <method signature="loginTest.allow_user_to_add_product_to_cart(pojo.productData)[pri:0, instance:loginTest@66f66866]" name="allow_user_to_add_product_to_cart" class="loginTest"/>
+        <method signature="loginTest.verify_user_cannot_add_product_to_cart(pojo.productData)[pri:0, instance:loginTest@3e1162e7]" name="verify_user_cannot_add_product_to_cart" class="loginTest"/>
+        <method signature="loginTest.verify_product_price_onUSD(pojo.productData)[pri:0, instance:loginTest@721eb7df]" name="verify_product_price_onUSD" class="loginTest"/>
+        <method signature="loginTest.verify_product_price_onEUR(pojo.productData)[pri:0, instance:loginTest@4e406694]" name="verify_product_price_onEUR" class="loginTest"/>
+        <method signature="loginTest.verify_product_price_onGBP(pojo.productData)[pri:0, instance:loginTest@6bb7cce7]" name="verify_product_price_onGBP" class="loginTest"/>
+      </group> <!-- successTest -->
+      <group name="sucessTests">
+        <method signature="loginTest.allow_user_to_do_login(pojo.loginData)[pri:0, instance:loginTest@4fdf8f12]" name="allow_user_to_do_login" class="loginTest"/>
+        <method signature="loginTest.fail_user_login(pojo.loginData)[pri:0, instance:loginTest@3b0f7d9d]" name="fail_user_login" class="loginTest"/>
+      </group> <!-- sucessTests -->
+    </groups>
+    <test started-at="2020-07-03T13:51:10 CST" name="allow _user_to_do_login" finished-at="2020-07-03T13:51:27 CST" duration-ms="16894">
+      <class name="loginTest">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:loginTest@4fdf8f12]" started-at="2020-07-03T13:51:10 CST" name="setUpTest" finished-at="2020-07-03T13:51:18 CST" duration-ms="7891" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="allow_user_to_do_login(pojo.loginData)[pri:0, instance:loginTest@4fdf8f12]" started-at="2020-07-03T13:51:19 CST" name="allow_user_to_do_login" data-provider="getUserDataFromJson" finished-at="2020-07-03T13:51:27 CST" duration-ms="8192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.loginData@55c1ced9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allow_user_to_do_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTest@4fdf8f12]" started-at="2020-07-03T13:51:27 CST" name="tearDown" finished-at="2020-07-03T13:51:27 CST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loginTest -->
+    </test> <!-- allow _user_to_do_login -->
+    <test started-at="2020-07-03T13:51:27 CST" name="fail_user_login" finished-at="2020-07-03T13:51:41 CST" duration-ms="13897">
+      <class name="loginTest">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:loginTest@3b0f7d9d]" started-at="2020-07-03T13:51:27 CST" name="setUpTest" finished-at="2020-07-03T13:51:32 CST" duration-ms="4547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="fail_user_login(pojo.loginData)[pri:0, instance:loginTest@3b0f7d9d]" started-at="2020-07-03T13:51:32 CST" name="fail_user_login" data-provider="getWrongUsersDataFromJson" finished-at="2020-07-03T13:51:40 CST" duration-ms="8791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.loginData@3dfe92ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fail_user_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTest@3b0f7d9d]" started-at="2020-07-03T13:51:40 CST" name="tearDown" finished-at="2020-07-03T13:51:41 CST" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loginTest -->
+    </test> <!-- fail_user_login -->
+    <test started-at="2020-07-03T13:51:41 CST" name="allow_user_to_logout" finished-at="2020-07-03T13:51:41 CST" duration-ms="1">
+    </test> <!-- allow_user_to_logout -->
+    <test started-at="2020-07-03T13:51:41 CST" name="allow_user_to_register" finished-at="2020-07-03T13:52:04 CST" duration-ms="23029">
+      <class name="loginTest">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:loginTest@7e11ab3d]" started-at="2020-07-03T13:51:41 CST" name="setUpTest" finished-at="2020-07-03T13:51:45 CST" duration-ms="4170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="allow_user_to_register(pojo.registerData)[pri:0, instance:loginTest@7e11ab3d]" started-at="2020-07-03T13:51:45 CST" name="allow_user_to_register" data-provider="getRegistrationUserDataFromJson" finished-at="2020-07-03T13:52:04 CST" duration-ms="18480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.registerData@134d7ffa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allow_user_to_register -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTest@7e11ab3d]" started-at="2020-07-03T13:52:04 CST" name="tearDown" finished-at="2020-07-03T13:52:04 CST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loginTest -->
+    </test> <!-- allow_user_to_register -->
+    <test started-at="2020-07-03T13:52:09 CST" name="allow_user_to_add_product_to_cart" finished-at="2020-07-03T13:52:19 CST" duration-ms="9461">
+      <class name="loginTest">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:loginTest@66f66866]" started-at="2020-07-03T13:52:09 CST" name="setUpTest" finished-at="2020-07-03T13:52:13 CST" duration-ms="3727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="allow_user_to_add_product_to_cart(pojo.productData)[pri:0, instance:loginTest@66f66866]" started-at="2020-07-03T13:52:13 CST" name="allow_user_to_add_product_to_cart" data-provider="getProductDataFromJson" finished-at="2020-07-03T13:52:18 CST" duration-ms="5425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.productData@32d22650]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allow_user_to_add_product_to_cart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTest@66f66866]" started-at="2020-07-03T13:52:18 CST" name="tearDown" finished-at="2020-07-03T13:52:19 CST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loginTest -->
+    </test> <!-- allow_user_to_add_product_to_cart -->
+    <test started-at="2020-07-03T13:52:24 CST" name="verify_user_cannot_add_product_to_cart" finished-at="2020-07-03T13:52:33 CST" duration-ms="9647">
+      <class name="loginTest">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:loginTest@3e1162e7]" started-at="2020-07-03T13:52:24 CST" name="setUpTest" finished-at="2020-07-03T13:52:28 CST" duration-ms="3819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verify_user_cannot_add_product_to_cart(pojo.productData)[pri:0, instance:loginTest@3e1162e7]" started-at="2020-07-03T13:52:28 CST" name="verify_user_cannot_add_product_to_cart" data-provider="getProductDataFromJson" finished-at="2020-07-03T13:52:33 CST" duration-ms="5588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.productData@3f122cdc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_user_cannot_add_product_to_cart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTest@3e1162e7]" started-at="2020-07-03T13:52:33 CST" name="tearDown" finished-at="2020-07-03T13:52:33 CST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loginTest -->
+    </test> <!-- verify_user_cannot_add_product_to_cart -->
+    <test started-at="2020-07-03T13:52:38 CST" name="verify_product_price_onUSD" finished-at="2020-07-03T13:53:05 CST" duration-ms="26846">
+      <class name="loginTest">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:loginTest@721eb7df]" started-at="2020-07-03T13:52:38 CST" name="setUpTest" finished-at="2020-07-03T13:52:42 CST" duration-ms="4015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verify_product_price_onUSD(pojo.productData)[pri:0, instance:loginTest@721eb7df]" started-at="2020-07-03T13:52:42 CST" name="verify_product_price_onUSD" data-provider="getProductDataFromJson" finished-at="2020-07-03T13:53:05 CST" duration-ms="22519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.productData@651cedfb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_product_price_onUSD -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTest@721eb7df]" started-at="2020-07-03T13:53:05 CST" name="tearDown" finished-at="2020-07-03T13:53:05 CST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loginTest -->
+    </test> <!-- verify_product_price_onUSD -->
+    <test started-at="2020-07-03T13:53:10 CST" name="verify_product_price_onEUR" finished-at="2020-07-03T13:53:37 CST" duration-ms="26711">
+      <class name="loginTest">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:loginTest@4e406694]" started-at="2020-07-03T13:53:10 CST" name="setUpTest" finished-at="2020-07-03T13:53:14 CST" duration-ms="3680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verify_product_price_onEUR(pojo.productData)[pri:0, instance:loginTest@4e406694]" started-at="2020-07-03T13:53:14 CST" name="verify_product_price_onEUR" data-provider="getProductDataEURFromJson" finished-at="2020-07-03T13:53:37 CST" duration-ms="22742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.productData@4b511e61]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_product_price_onEUR -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTest@4e406694]" started-at="2020-07-03T13:53:37 CST" name="tearDown" finished-at="2020-07-03T13:53:37 CST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loginTest -->
+    </test> <!-- verify_product_price_onEUR -->
+    <test started-at="2020-07-03T13:53:42 CST" name="verify_product_price_onGBP" finished-at="2020-07-03T13:54:08 CST" duration-ms="26233">
+      <class name="loginTest">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:loginTest@6bb7cce7]" started-at="2020-07-03T13:53:42 CST" name="setUpTest" finished-at="2020-07-03T13:53:45 CST" duration-ms="3464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="verify_product_price_onGBP(pojo.productData)[pri:0, instance:loginTest@6bb7cce7]" started-at="2020-07-03T13:53:45 CST" name="verify_product_price_onGBP" data-provider="getProductDataGBPFromJson" finished-at="2020-07-03T13:54:08 CST" duration-ms="22407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.productData@47f0e078]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_product_price_onGBP -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTest@6bb7cce7]" started-at="2020-07-03T13:54:08 CST" name="tearDown" finished-at="2020-07-03T13:54:08 CST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loginTest -->
+    </test> <!-- verify_product_price_onGBP -->
+  </suite> <!-- Login Suite -->
+</testng-results>
